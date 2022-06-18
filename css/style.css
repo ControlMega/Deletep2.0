@@ -214,8 +214,8 @@ ol {
 	margin-top: -13px;
 	margin-left: -13px;
 	border-radius: 60px;
-	animation: loader 0.8s linear infinite;
-	-webkit-animation: loader 0.8s linear infinite;
+	animation: loader 0.6s linear infinite;
+	-webkit-animation: loader 0.6s linear infinite;
 }
 
 @keyframes loader {
@@ -623,7 +623,7 @@ ol {
 
 .product {
 	padding-bottom: 60px;
-	padding-top: 80px;
+	padding-top: 6%;
 }
 
 .product-page {
@@ -767,10 +767,10 @@ ol {
 }
 
 .product__sidebar__view__item {
-	height: 190px;
+	height: 280px;
 	position: relative;
 	border-radius: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 }
 
 .product__sidebar__view__item .ep {
@@ -2131,6 +2131,7 @@ ol {
 		padding-left: 0;
 	}
 }
+
 
 /* Wide Mobile = 480px */
 
