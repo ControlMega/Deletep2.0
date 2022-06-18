@@ -31,6 +31,11 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+a.disabled {
+	pointer-events: none;
+	cursor: default;
+  }
+
 html,
 body {
 	height: 100%;
@@ -2173,7 +2178,7 @@ ol {
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
-		padding: 7px 0;
+		padding: 10px 0;
 		margin: 0;
 		color: #111111;
 		font-weight: 600;
