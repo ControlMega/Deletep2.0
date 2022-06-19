@@ -100,6 +100,120 @@ textarea:focus {
 	outline: none;
 }
 
+.text{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0;
+	color: white;
+	font-weight: 400;
+	font-family: "Mulish", sans-serif;
+	font-size: 1.4em;
+}
+
+.subtext{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0;
+	color: #b7b7b7;
+	font-weight: 400;
+	font-family: "Mulish", sans-serif;
+	font-size: 1em;
+	margin-top: 2%;
+	margin-bottom: 2px;
+}
+
+.linea {
+	border-top: 1px solid rgba(255, 255, 255, 0.274);
+	height: 2px;
+	max-width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 32px;
+	margin-top: 6px;
+}
+
+.espaciados{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 80px;	
+}
+
+.foto{
+    width: 170px;
+    height: 84px;
+}
+
+.medida{
+    height: 70px;
+    
+}
+
+.figure{
+    padding: 0%;
+    margin: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    color: white;
+    font-size: medium;
+    margin-top: 0%;
+}
+
+.contenido{
+    color: #9e9e9e;
+    font-size: 0.9em;
+    margin: 0%;
+	padding-top: 10px;
+}
+
+.view{
+    color: #9e9e9e;
+    font-size: 0.9em;
+    margin: 0%;
+    padding-top: 4px;
+
+}
+
+.medium{
+    align-items: flex-start;
+    display: flex;
+    vertical-align: baseline;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.space{
+    padding-left: 0%;
+    padding-right: 0%;
+	margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    color: white;
+	font-family: "Mulish", sans-serif;
+    font-size: large;
+	font-weight: bold;
+}
+
+.centrar{
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+
+
 a:hover,
 a:focus {
 	text-decoration: none;
@@ -955,7 +1069,7 @@ ol {
 }
 
 .anime__details__content {
-	margin-bottom: 65px;
+	margin-bottom: 15px;
 }
 
 .anime__details__text {
@@ -1188,7 +1302,28 @@ ol {
 -----------------------*/
 
 .anime__video__player {
-	margin-bottom: 70px;
+	margin-bottom: 0px;
+}
+
+.centrado{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 100%;
+	right: 100%;
+}
+
+.button{
+	font-weight: bold;	
+	align-content: center;
+    padding: 10px 17px;
+	margin-left: 15px;
+	margin-right: 15px;    
+    font-size: 16px;
+	border-radius: 40px;
+	background-color: black;
+    color: #b7b7b7;
+    border: 2px solid #b7b7b7;
 }
 
 .anime__video__player .plyr--video {
