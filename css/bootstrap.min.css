@@ -583,6 +583,7 @@ pre code {
     .container {
         max-width: 540px
     }
+
 }
 
 @media (min-width:768px) {
@@ -660,6 +661,23 @@ pre code {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px
+}
+
+.rew {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto   
+}
+
+.raw {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px
 }
 
 .no-gutters {
