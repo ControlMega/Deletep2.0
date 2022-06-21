@@ -53,9 +53,9 @@
 } 
 
 .contenedor{
-	width: 80%;
-	height: 50%;
-	margin: auto;
+	width: 90%;
+	height: auto;
+	padding-bottom: 20px;
 	background: #0b0c2a;
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
@@ -2227,7 +2227,7 @@ ol {
 /* Medium Device = 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.contenedor{
+	/* .contenedor{
 		width: 80%;
 		height: 50%;
 		margin: auto;
@@ -2237,7 +2237,7 @@ ol {
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 220px;
@@ -2267,7 +2267,7 @@ ol {
 /* Tablet Device = 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.contenedor{
+	/* .contenedor{
 		width: 80%;
 		height: 58%;
 		margin: auto;
@@ -2277,7 +2277,7 @@ ol {
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 220px;
@@ -2396,7 +2396,7 @@ ol {
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
-	.contenedor{
+	/* .contenedor{
 		width: 70%;
 		height: 58%;
 		margin: auto;
@@ -2406,7 +2406,7 @@ ol {
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 220px;
@@ -2561,9 +2561,10 @@ ol {
 
 @media only screen and (max-width: 479px) {
 
-	.contenedor{
+	/* .contenedor{
 		width: 90%;
-		height: 56%;
+		height: auto;
+		padding-bottom: 20px;
 		margin: auto;
 		background: #0b0c2a;
 		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
@@ -2571,7 +2572,7 @@ ol {
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 200px;
@@ -2652,10 +2653,11 @@ ol {
 
 
 
-@media only screen and (min-width: 412px) and (max-width: 420px) {
-	.contenedor{
+@media only screen and (min-width: 400px) and (max-width: 425px) {
+	/* .contenedor{
 		width: 90%;
-		height: 30%;
+		height: auto;
+		padding-bottom: 20px;
 		margin: auto;
 		background: #0b0c2a;
 		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
@@ -2663,7 +2665,7 @@ ol {
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 158px;
@@ -2679,17 +2681,17 @@ ol {
 }
 
 @media only screen and (max-width: 360px) {
-	.contenedor{
+	/* .contenedor{
 		width: 90%;
-		height: 34%;
-		margin: auto;
+		height: auto;
+		padding-bottom: 20px;
 		background: #0b0c2a;
 		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 		transition: all 500ms ease;
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 158px;
@@ -2705,7 +2707,7 @@ ol {
 }
 
 @media only screen and (max-width: 320px) {
-	.contenedor{
+	/* .contenedor{
 		width: 90%;
 		height: 42%;
 		margin: auto;
@@ -2715,7 +2717,7 @@ ol {
 		position: relative;
 		transform: translateY(-30%);
 		border-radius: 10px;
-	}
+	}*/
 	
 	.imganime{
 		width: 158px;
