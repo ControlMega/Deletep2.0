@@ -31,6 +31,85 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+.modal{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+} 
+
+.contenedor{
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	background: #0b0c2a;
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+	border-radius: 10px;
+}
+
+.imganime{
+	width: 220px;
+	height: 120px;
+}
+
+.espaciados{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 80px;	
+}
+
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+} 
+.contenedor header{
+	padding: 10px;
+	background: darkslateblue;
+	color: #fff;
+}
+.contenedor label{
+	position: absolute;
+	font-weight: bold;
+	top: 10px;
+	right: 15px;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	cursor: pointer;
+}
+.contenido{
+	width: 100%;
+	padding: 10px; 
+}
+.contenido h3{
+	margin-bottom: 10px;
+}
+.contenido p{
+	margin-bottom: 7px;
+}
+#btn-modal{
+	display: none;
+}
+.lbl-modal{
+	
+	cursor: pointer;
+}
+
 a.disabled {
 	pointer-events: none;
 	cursor: default;
@@ -135,11 +214,7 @@ textarea:focus {
 	margin-top: 6px;
 }
 
-.espaciados{
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 80px;	
-}
+
 
 .foto{
     width: 170px;
@@ -164,7 +239,7 @@ textarea:focus {
     margin-top: 0%;
 }
 
-.contenido{
+.contenidore{
     color: #9e9e9e;
     font-size: 0.9em;
     margin: 0%;
@@ -2152,6 +2227,28 @@ ol {
 /* Medium Device = 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.contenedor{
+		width: 80%;
+		height: 50%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 220px;
+		height: 120px;
+	}
+	
+	.espaciados{
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 80px;	
+	}
 	.hero {
 		overflow: hidden;
 	}
@@ -2170,6 +2267,29 @@ ol {
 /* Tablet Device = 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.contenedor{
+		width: 80%;
+		height: 58%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 220px;
+		height: 120px;
+	}
+	
+	.espaciados{
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 80px;	
+	}
+
 	.hero {
 		overflow: hidden;
 	}
@@ -2276,6 +2396,29 @@ ol {
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
+	.contenedor{
+		width: 70%;
+		height: 58%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 220px;
+		height: 120px;
+	}
+	
+	.espaciados{
+		padding-left: 122px;
+		padding-right: 122px;
+		padding-bottom: 180px;	
+	}
+
 	.hero {
 		overflow: hidden;
 	}
@@ -2417,6 +2560,31 @@ ol {
 /* Small Device = 320px */
 
 @media only screen and (max-width: 479px) {
+
+	.contenedor{
+		width: 90%;
+		height: 56%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 200px;
+		height: 115px;
+	}
+	
+	.espaciados{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 110px;	
+	}
+
+
 	.hero__slider.owl-carousel .owl-nav {
 		display: none;
 	}
@@ -2480,4 +2648,82 @@ ol {
 	.anime__review__item__text {
 		padding: 18px 20px 20px;
 	}
+}
+
+@media only screen and (max-width: 412px) {
+	.contenedor{
+		width: 90%;
+		height: 30%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 158px;
+		height: 85px;
+	}
+	
+	.espaciados{
+		padding-left: 19px;
+		padding-right: 19px;
+		padding-bottom: 100px;	
+	}
+	
+}
+
+@media only screen and (max-width: 360px) {
+	.contenedor{
+		width: 90%;
+		height: 34%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 158px;
+		height: 72px;
+	}
+	
+	.espaciados{
+		padding-left: 19px;
+		padding-right: 19px;
+		padding-bottom: 100px;	
+	}
+	
+}
+
+@media only screen and (max-width: 320px) {
+	.contenedor{
+		width: 90%;
+		height: 42%;
+		margin: auto;
+		background: #0b0c2a;
+		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+		transition: all 500ms ease;
+		position: relative;
+		transform: translateY(-30%);
+		border-radius: 10px;
+	}
+	
+	.imganime{
+		width: 158px;
+		height: 68px;
+	}
+	
+	.espaciados{
+		padding-left: 19px;
+		padding-right: 19px;
+		padding-bottom: 100px;	
+	}
+	
 }
