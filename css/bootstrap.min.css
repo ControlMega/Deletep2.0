@@ -7799,7 +7799,7 @@ button.bg-dark:hover {
 .embed-responsive embed,
 .embed-responsive iframe,
 .embed-responsive object,
-.embed-responsive video {
+.embed-responsive videos {
     position: absolute;
     top: 0;
     bottom: 0;

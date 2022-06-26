@@ -1,6 +1,6 @@
 /******************************************************************
   Theme Name: Anime
-  Description: Anime video tamplate
+  Description: Anime ol tamplate
   Author: Colorib
   Author URI: https://colorib.com/
   Version: 1.0
@@ -31,18 +31,20 @@
 /* Template default CSS
 /*----------------------------------------*/
 
-.modal{
+
+/* Modal 1
+/*----------------------------------------*/
+
+/* .modal{
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.modal{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0, 0, 0, 0.671);
 	transition: all 500ms ease;
 	opacity: 0;
 	visibility: hidden;
@@ -50,18 +52,116 @@
 #btn-modal:checked ~ .modal{
 	opacity: 1;
 	visibility: visible;
+}
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+#btn-modal{
+	display: none;
+}
+.lbl-modal{
+	cursor: pointer;
+} */
+
+
+/* Modal 2
+/*----------------------------------------*/
+/* .modal2{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.671);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-modal2:checked ~ .modal2{
+	opacity: 1;
+	visibility: visible;
+}
+#btn-modal2:checked ~ .modal2 .contenedor{
+	transform: translateY(0%);
+}
+#btn-modal2{
+	display: none;
+}
+.lbl-modal2{
+	cursor: pointer;
+} */
+
+.modal , .modal2{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal{
+	z-index: 49;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(18, 9, 54, 0.82);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.modal2{
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(18, 9, 54, 0.82);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+} 
+#btn-modal2:checked ~ .modal2{
+	opacity: 1;
+	visibility: visible;
 } 
 
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+} 
+
+#btn-modal2:checked ~ .modal2 .contenedor{
+	transform: translateY(0%);
+} 
+
+#btn-modal{
+	display: none;
+}
+
+#btn-modal2{
+	display: none;
+}
+
+video{
+	width: 98%;
+}
+
 .contenedor{
-	width: 90%;
+	width: 88%;
 	height: auto;
-	padding-bottom: 20px;
-	background: #0b0c2a;
-	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	/* height: 300px; */
+	margin: auto;
+	box-shadow: 0 0 0 rgba(0,0,0,0.0);
 	transition: all 500ms ease;
 	position: relative;
 	transform: translateY(-30%);
-	border-radius: 10px;
 }
 
 .imganime{
@@ -72,43 +172,47 @@
 .espaciados{
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-bottom: 80px;	
+	padding-bottom: 30px;	
 }
 
-#btn-modal:checked ~ .modal .contenedor{
-	transform: translateY(0%);
-} 
 .contenedor header{
+	align-items: center;
+	justify-content: center;
+	box-sizing: content-box;
 	padding: 10px;
-	background: darkslateblue;
+	background: #0b102b00;
 	color: #fff;
 }
 .contenedor label{
 	position: absolute;
-	font-weight: bold;
-	top: 10px;
-	right: 15px;
-	color: rgb(255, 255, 255);
+	top: -10px;
+	color: #fff;
 	font-size: 15px;
 	cursor: pointer;
 }
+
+.contenedor .contenido label{
+	position: relative;
+	left: 0px;
+}
 .contenido{
 	width: 100%;
-	padding: 10px; 
+	display: block;
+	 justify-content: center;
+	 position: relative;
 }
-.contenido h3{
-	margin-bottom: 10px;
-}
-.contenido p{
-	margin-bottom: 7px;
-}
-#btn-modal{
-	display: none;
-}
+
 .lbl-modal{
-	
+	/* background: rgb(197, 8, 8); */
+	border-radius: 0px;
 	cursor: pointer;
 }
+
+
+
+
+
+
 
 a.disabled {
 	pointer-events: none;
@@ -260,7 +364,7 @@ textarea:focus {
     vertical-align: baseline;
     padding-left: 0%;
     padding-right: 0%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-top: 20px;
     margin-left: 0%;
     margin-right: 0%;
@@ -1375,8 +1479,8 @@ ol {
 /*---------------------
   Anime Watching
 -----------------------*/
-
-.anime__video__player {
+/* 
+.anime__ol__player {
 	margin-bottom: 0px;
 }
 
@@ -1401,85 +1505,85 @@ ol {
     border: 2px solid #b7b7b7;
 }
 
-.anime__video__player .plyr--video {
+.anime__ol__player .plyr--ol {
 	border-radius: 5px;
 	background: transparent;
 }
 
-.anime__video__player .plyr audio,
-.anime__video__player .plyr iframe,
-.anime__video__player .plyr video {
+.anime__ol__player .plyr audio,
+.anime__ol__player .plyr iframe,
+.anime__ol__player .plyr ol {
 	width: 102%;
-}
+} */
 
-.anime__video__player .plyr--full-ui.plyr--video .plyr__control--overlaid {
+/* .anime__ol__player .plyr--full-ui.plyr--ol .plyr__control--overlaid {
 	display: block;
 }
 
-.anime__video__player .plyr--video .plyr__control.plyr__tab-focus,
-.anime__video__player .plyr--video .plyr__control:hover,
-.anime__video__player .plyr--video .plyr__control[aria-expanded=true] {
+.anime__ol__player .plyr--ol .plyr__control.plyr__tab-focus,
+.anime__ol__player .plyr--ol .plyr__control:hover,
+.anime__ol__player .plyr--ol .plyr__control[aria-expanded=true] {
 	background: transparent;
 }
 
-.anime__video__player .plyr--video .plyr__controls {
+.anime__ol__player .plyr--ol .plyr__controls {
 	background: transparent;
 }
 
-.anime__video__player .plyr--video .plyr__progress__buffer {
+.anime__ol__player .plyr--ol .plyr__progress__buffer {
 	color: transparent;
 }
 
-.anime__video__player .plyr--full-ui input[type=range] {
+.anime__ol__player .plyr--full-ui input[type=range] {
 	color: #ffffff;
 }
 
-.anime__video__player .plyr__controls .plyr__controls__item.plyr__progress__container {
+.anime__ol__player .plyr__controls .plyr__controls__item.plyr__progress__container {
 	position: absolute;
 	left: 26px;
 	bottom: 45px;
 	width: calc(100% - 60px);
-}
+} */
 
-.anime__video__player .plyr__menu {
+/* .anime__ol__player .plyr__menu {
 	margin-right: 70px;
 }
 
-.anime__video__player .plyr__controls .plyr__controls__item:first-child {
+.anime__ol__player .plyr__controls .plyr__controls__item:first-child {
 	position: absolute;
 	left: 32px;
 	bottom: 8px;
 }
 
-.anime__video__player .plyr__controls .plyr__controls__item:last-child {
+.anime__ol__player .plyr__controls .plyr__controls__item:last-child {
 	position: absolute;
 	right: 32px;
 	bottom: 8px;
 }
 
-.anime__video__player .plyr__volume {
+.anime__ol__player .plyr__volume {
 	position: absolute;
 	width: auto;
 	left: 76px;
 	bottom: 8px;
 }
 
-.anime__video__player .plyr__controls .plyr__controls__item.plyr__time {
+.anime__ol__player .plyr__controls .plyr__controls__item.plyr__time {
 	position: absolute;
 	left: 106px;
 	bottom: 12px;
 }
 
-.anime__video__player .plyr__control--overlaid {
+.anime__ol__player .plyr__control--overlaid {
 	background: transparent;
-	background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, transparent)));
-}
+	background: var(--plyr-ol-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, transparent)));
+} */
 
-.anime__video__player .plyr__control--overlaid svg {
+/* .anime__ol__player .plyr__control--overlaid svg {
 	height: 60px;
 	width: 50px;
-}
-
+} */
+/* 
 .anime__details__episodes {
 	margin-bottom: 35px;
 }
@@ -1501,7 +1605,7 @@ ol {
 .anime__details__episodes a:hover {
 	color: #000000;
 	background: #ffffff;
-}
+} */
 
 /*---------------------
   Breadcrumb
@@ -2606,13 +2710,13 @@ ol {
 	.anime__details__widget ul li span {
 		width: 85px;
 	}
-	.anime__video__player .plyr__volume {
+	.anime__ol__player .plyr__volume {
 		left: 65px;
 	}
-	.anime__video__player .plyr__controls .plyr__controls__item.plyr__time {
+	.anime__ol__player .plyr__controls .plyr__controls__item.plyr__time {
 		left: 95px;
 	}
-	.anime__video__player .plyr__menu {
+	.anime__ol__player .plyr__menu {
 		margin-right: 60px;
 	}
 	.blog__details__title h2 {
@@ -2653,7 +2757,7 @@ ol {
 
 
 
-@media only screen and (min-width: 400px) and (max-width: 425px) {
+@media only screen and (min-width: 400px) and (max-width: 540px) {
 	/* .contenedor{
 		width: 90%;
 		height: auto;
@@ -2668,19 +2772,19 @@ ol {
 	}*/
 	
 	.imganime{
-		width: 158px;
-		height: 85px;
+		width: 12rem;
+		height: auto;
 	}
 	
 	.espaciados{
 		padding-left: 19px;
 		padding-right: 19px;
-		padding-bottom: 100px;	
+		padding-bottom: 60px;	
 	}
 	
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) and (max-width: 400px) {
 	/* .contenedor{
 		width: 90%;
 		height: auto;
@@ -2694,14 +2798,14 @@ ol {
 	}*/
 	
 	.imganime{
-		width: 158px;
-		height: 72px;
+		width: 10rem;
+		height: auto;
 	}
 	
 	.espaciados{
 		padding-left: 19px;
 		padding-right: 19px;
-		padding-bottom: 100px;	
+		padding-bottom: 60px;	
 	}
 	
 }
@@ -2727,7 +2831,7 @@ ol {
 	.espaciados{
 		padding-left: 19px;
 		padding-right: 19px;
-		padding-bottom: 100px;	
+		padding-bottom: 60px;	
 	}
 	
 }
