@@ -2755,6 +2755,10 @@ ol {
 	}
 }
 
+.medium{
+	padding-bottom: 2rem;
+}
+
 
 
 @media only screen and (min-width: 400px) and (max-width: 540px) {
@@ -2780,6 +2784,9 @@ ol {
 		padding-left: 19px;
 		padding-right: 19px;
 		padding-bottom: 60px;	
+	}
+	.medium{
+		padding-bottom: 2rem;
 	}
 	
 }
