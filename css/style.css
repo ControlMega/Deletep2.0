@@ -2811,17 +2811,6 @@ ol {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 400px) {
-	/* .contenedor{
-		width: 90%;
-		height: auto;
-		padding-bottom: 20px;
-		background: #0b0c2a;
-		box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
-		transition: all 500ms ease;
-		position: relative;
-		transform: translateY(-30%);
-		border-radius: 10px;
-	}*/
 	
 	.imganime{
 		width: 10rem;
@@ -2833,6 +2822,11 @@ ol {
 		padding-right: 19px;
 		padding-bottom: 60px;	
 	}
+
+	.medium{
+		padding-bottom: 0rem;
+	}
+	
 	
 }
 
@@ -2858,6 +2852,10 @@ ol {
 		padding-left: 19px;
 		padding-right: 19px;
 		padding-bottom: 60px;	
+	}
+
+	.medium{
+		padding-bottom: 0rem;
 	}
 	
 }
