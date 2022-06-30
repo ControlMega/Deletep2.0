@@ -383,7 +383,7 @@ textarea:focus {
     vertical-align: baseline;
     padding-left: 0%;
     padding-right: 0%;
-    margin-bottom: 30px;
+    margin-bottom: 1.4rem;
     margin-top: 20px;
     margin-left: 0%;
     margin-right: 0%;
@@ -2775,7 +2775,7 @@ ol {
 }
 
 .medium{
-	padding-bottom: 2rem;
+	padding-bottom: 1.4rem;
 }
 
 
@@ -2805,7 +2805,7 @@ ol {
 		padding-bottom: 60px;	
 	}
 	.medium{
-		padding-bottom: 2rem;
+		padding-bottom: 1.4rem;
 	}
 	
 }
